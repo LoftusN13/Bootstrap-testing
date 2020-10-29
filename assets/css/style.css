@@ -61,7 +61,7 @@ body {
     color: #ffffff;
     background-color: #1F89E0;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 
 .footer-section h6 {
@@ -93,4 +93,18 @@ body {
     height: 4rem;
     margin-top: 1rem;
     padding-top: 0.5rem;
+}
+
+.footer-copyright {
+    font-size: 80%;
+    font-weight: 100;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.footer-terms {
+    font-size: 80%;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: right;
 }
