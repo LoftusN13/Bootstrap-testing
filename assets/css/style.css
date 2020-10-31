@@ -93,6 +93,10 @@ body {
     text-align: center;
     padding: 3rem 1.5rem 3rem 1.5rem;
 }
+
+.who-section p {
+    font-size: 1.2rem;
+}
 .what-section {
     margin-right: 0;
 }
@@ -111,13 +115,13 @@ body {
     text-decoration: none;
 }
 
-h3 {
+h2 {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.2rem;
     padding-bottom: 1rem;
 }
 
-.intro-section h3 {
+.intro-section h2 {
     color: #1F89E0;
 }
 
@@ -157,7 +161,7 @@ h3 {
 
 .footer-section a i {
     font-size: xx-large;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
 
 .footer-logo1 {
@@ -186,7 +190,7 @@ h3 {
 }
 
 /*-------------------------Media Queries-------------------- */ 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     .slogan {
         font-size: 2rem;
         padding: 2rem 1rem;
@@ -194,15 +198,30 @@ h3 {
     .footer-section h6 {
         display: none;
     }
-    .footer-section a i {
-        padding: 1.5rem;
+    .footer-copyright,
+    .footer-terms {
+        text-align: center;
     }
 }
+ @media only screen and (min-width: 576px) {
+     .footer-logo1 {
+         padding-right: 2rem;
+     }
+     .footer-logo2 {
+         padding-left: 2rem;
+     }
+ }
 
+  @media only screen and (max-width: 1258px) and (min-width: 992px) {
+     .footer-logo1 {
+         height: 4.5rem;
+         padding-right: 0;
+     }
+     .footer-logo2 {
+         height: 3.5rem;
+         padding-left: 0;
+         margin-top: 1.5rem;
+     }
+ }
 
-@media only screen and (min-width: 576px) and (max-width:1063px) {
-    .footer-logo2 {
-        display: none;
-    }
-}
 
