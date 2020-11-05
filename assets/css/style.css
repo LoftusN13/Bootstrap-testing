@@ -136,7 +136,7 @@ h2 {
 /*-------------------------About Page------------------- */ 
 .about-section {
     text-align: center;
-    padding: 4rem 2.5rem 1rem 2.5rem;
+    padding: 3rem 2.5rem 1rem 2.5rem;
     margin-right: 0;
 }
 
@@ -154,12 +154,10 @@ h2 {
 /*----------------------Contact Page-------------------- */ 
 .contact-section {
     text-align: center;
-}
-.contact-section h2 {
-    color: #1F89E0;
+    padding: 2rem 1.5rem;
 }
 
-.contact-section a {
+.contact-section h2, a {
     color: #1F89E0;
 }
 
@@ -170,16 +168,39 @@ h2 {
 
 .contact-section a i {
     font-size: xx-large;
-    padding: 1rem 1.5rem;
+    padding: 2rem;
 }
 
-.contact-form {
-    text-align: left;
-}
-
-input[type=text] {
+input[type=text], input[type=email], textarea {
     width: 100%;
+    margin-bottom: 1rem;
+    color: #161412;
 }
+
+label {
+    float: left;
+    color: #0C375A;
+}
+
+label, #submit {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .2rem;
+    margin-bottom: 0;
+}
+
+#submit {
+    color: #ffffff;
+    background-color: #0C375A;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+
+#submit:hover {
+    background-color: #1F89E0;
+}
+
+
 /*-------------------------Footer----------------------- */
 .footer-section {
     color: #ffffff;
