@@ -50,10 +50,10 @@
     <!-------------CONTACT------------------>
     <div class="container-fluid contact-section">
         <div class="row">   
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-6 contact-info">
                 <h2>Contact Us</h2>
                 <p>
-                    For further information or to make enquiries about our Water Stations please complete our contact form.<br>
+                    For further information or to make enquiries about our Water Stations please complete our contact form<span class="form-prompt"> below</span>.<br>
                 </p>
                 <p>
                     Alternatively feel free to contact us at <strong>hello@waterstationsireland.com</strong> 
@@ -78,21 +78,22 @@
             
             <!--------Contact Form--------->
             <div class="col-sm-12 col-lg-6">
-                <form class="contact-form">
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" name="fullname" id="fullname" required ><br>
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" name="fullname" class="form-control" id="fullname" required ><br>
 
-                    <label for="phone-number">Phone Number:</label><br>
-                    <input type="text" name="phone-number" id="phone-number" required ><br>
+                        <label for="phone-number">Phone Number:</label><br>
+                        <input type="text" name="phone-number" class="form-control" id="phone-number" required ><br>
 
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" name="email" id="email" required ><br>
-                    
-                    <label for="enquiry">Subject:</label><br>
-                    <textarea name="enquiry" id="enquiry" cols="30" rows="10" placeholder="Your message or enquiry here..." required ></textarea><br>
-                    
-                    <input type="submit" name="submit" id="submit" value="Submit">
-                
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" name="email" class="form-control" id="email" required ><br>
+                        
+                        <label for="enquiry">Subject:</label><br>
+                        <textarea name="enquiry" class="form-control" id="enquiry" cols="30" rows="10" placeholder="Your message or enquiry here..." required ></textarea><br>
+                        
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </div>
                 </form>
             </div>  
         </div>

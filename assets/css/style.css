@@ -16,6 +16,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
     letter-spacing: .2rem;
     padding-bottom: 1rem;
+    color: #1F89E0;
 }
 
 /*-------------------------Header----------------------- */ 
@@ -29,6 +30,7 @@ h2 {
     font-size: 110%;
     font-weight: 500;
     letter-spacing: .2rem;
+    border-bottom: .15rem #0C375A solid;
 }
 
 .navbar-brand {
@@ -103,10 +105,13 @@ h2 {
     text-align: center;
     padding: 3rem 1.5rem;
 }
-
+.who-section h2 {
+    color: #ffffff;
+}
 .who-section p {
     font-size: 1.2rem;
 }
+
 .what-section {
     margin-right: 0;
 }
@@ -115,18 +120,12 @@ h2 {
     text-align: center;
     padding: 4rem 2.5rem 1rem 2.5rem;
 }
-
 .intro-section a {
     color: #1F89E0;
 }
-
 .intro-section a:hover {
     color: #0C375A;
     text-decoration: none;
-}
-
-.intro-section h2 {
-    color: #1F89E0;
 }
 
 .home-image {
@@ -140,11 +139,16 @@ h2 {
     margin-right: 0;
 }
 
-.about-section h2 {
-    color: #1F89E0;
+.mission-section {
+    background-color: #0C375A;
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1.5rem;
 }
-
-.who-section i {
+.mission-section h2 {
+    color: #ffffff;
+}
+.mission-section i {
     font-size: xx-large;
     padding: 1rem;
 }
@@ -156,32 +160,25 @@ h2 {
     text-align: center;
     padding: 2rem 1.5rem;
 }
-
-.contact-section h2, a {
+.contact-section a {
     color: #1F89E0;
 }
-
 .contact-section a:hover {
     color: #0C375A;
     text-decoration: none;
 }
-
 .contact-section a i {
     font-size: xx-large;
-    padding: 2rem;
+    padding: 1.5rem;
 }
-
-input[type=text], input[type=email], textarea {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #161412;
+.form-group {
+    padding: 1rem;
+    margin-bottom: 0;
 }
-
 label {
     float: left;
     color: #0C375A;
 }
-
 label, #submit {
     font-family: "Montserrat", sans-serif;
     letter-spacing: .2rem;
@@ -195,11 +192,9 @@ label, #submit {
     border-radius: 1.5rem;
     padding: .5rem;
 }
-
 #submit:hover {
     background-color: #1F89E0;
 }
-
 
 /*-------------------------Footer----------------------- */
 .footer-section {
@@ -262,7 +257,10 @@ label, #submit {
         font-size: 1.25rem;
     }
     #logo {
-    height: 4rem;   
+        height: 4rem;   
+    }
+    .contact-section a i {
+        padding: 2rem;
     }
 }
 
@@ -281,26 +279,36 @@ label, #submit {
     }
     .footer-logo1 {
          padding-right: 2rem;
-     }
-     .footer-logo2 {
-         padding-left: 2rem;
-     }
+    }
+    .footer-logo2 {
+        padding-left: 2rem;
+    }
+    .form-group {
+        padding: 1rem 4rem;
+    }
+    .contact-info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
-
-@media only screen and (min-width: 992px) and (max-width: 1258px) {
-     .footer-logo1 {
-         height: 4.5rem;
-         padding-right: 0;
-     }
-     .footer-logo2 {
-         height: 3.5rem;
-         padding-left: 0;
-         margin-top: 1.5rem;
-     }
- }
 
 @media only screen and (min-width: 992px) {
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: #ffffff;
+    }
+    .form-prompt {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1258px) {
+    .footer-logo1 {
+        height: 4.5rem;
+        padding-right: 0;
+    }
+    .footer-logo2 {
+        height: 3.5rem;
+        padding-left: 0;
+        margin-top: 1.5rem;
     }
 }
