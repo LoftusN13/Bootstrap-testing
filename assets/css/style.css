@@ -131,22 +131,31 @@ h2 {
 /*-------------------------About Page------------------- */ 
 .about-section {
     text-align: center;
-    padding: 3rem 2.5rem 1rem 2.5rem;
-    margin-right: 0;
+    margin: 0;
 }
 
-.mission-section {
+.mission-section, .station-section { 
+    text-align: center;
+    padding: 2rem 2rem .5rem 2rem;
+}
+
+.promise-section {
     background-color: #0C375A;
     color: #ffffff;
     text-align: center;
     padding: 3rem 1.5rem;
 }
-.mission-section h2 {
+.promise-section h2 {
     color: #ffffff;
 }
-.mission-section i {
-    font-size: xx-large;
+.promise-section i {
+    font-size: 2rem;
     padding: 1rem;
+}
+
+.about-image {
+    align-content: center;
+    padding: 1rem 2rem;
 }
 
 /*--------------------Our Products Page----------------- */ 
@@ -164,7 +173,7 @@ h2 {
     text-decoration: none;
 }
 .contact-section a i {
-    font-size: xx-large;
+    font-size: 2rem;
     padding: 1.5rem;
 }
 
