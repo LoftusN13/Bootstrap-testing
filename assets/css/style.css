@@ -125,8 +125,7 @@ h2 {
 }
 
 .home-image {
-    align-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
 }
 /*-------------------------About Page------------------- */ 
 .about-section {
@@ -135,7 +134,6 @@ h2 {
 }
 
 .mission-section, .station-section { 
-    text-align: center;
     padding: 2rem 2rem .5rem 2rem;
 }
 
@@ -153,9 +151,8 @@ h2 {
     padding: 1rem;
 }
 
-.about-image {
-    align-content: center;
-    padding: 1rem 2rem;
+.station-image, .mission-image {
+    padding: 1rem 2rem 2rem 2rem;
 }
 
 /*--------------------Our Products Page----------------- */ 
@@ -272,6 +269,13 @@ label, #submit {
     #overlay h1 {
         font-size: 2rem;
     }
+    .contact-info {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .form-group {
+        padding: 1rem 4rem;
+    }
     .footer-section h6 {
         display: block;
     }
@@ -282,23 +286,22 @@ label, #submit {
         text-align: right;
     }
     .footer-logo1 {
-         padding-right: 2rem;
+        padding-right: 2rem;
     }
     .footer-logo2 {
         padding-left: 2rem;
-    }
-    .form-group {
-        padding: 1rem 4rem;
-    }
-    .contact-info {
-        padding-left: 4rem;
-        padding-right: 4rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: #ffffff;
+    }
+    .home-image, .station-image, .mission-image {
+        padding-bottom: 1rem;
+    }
+    .station-image {
+        padding-top: 1.5rem;
     }
     .form-prompt {
         display: none;
