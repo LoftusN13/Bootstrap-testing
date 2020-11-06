@@ -27,7 +27,7 @@ h2 {
 .navbar {
     padding-top: .5rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 110%;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: .2rem;
     border-bottom: .15rem #0C375A solid;
@@ -39,7 +39,7 @@ h2 {
 
 .navbar-toggler {
     border: none;
-    font-size: 120%;;
+    font-size: 1.5rem;
 }
 
 .navbar-collapse {
@@ -84,7 +84,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #overlay h1 {
@@ -108,17 +107,14 @@ h2 {
 .who-section h2 {
     color: #ffffff;
 }
-.who-section p {
-    font-size: 1.2rem;
-}
 
 .what-section {
-    margin-right: 0;
+    margin: 0;
 }
 
 .intro-section {
     text-align: center;
-    padding: 4rem 2.5rem 1rem 2.5rem;
+    padding: 2rem 2rem .5rem 2rem;
 }
 .intro-section a {
     color: #1F89E0;
@@ -130,7 +126,7 @@ h2 {
 
 .home-image {
     align-content: center;
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 1rem 2rem;
 }
 /*-------------------------About Page------------------- */ 
 .about-section {
@@ -171,6 +167,7 @@ h2 {
     font-size: xx-large;
     padding: 1.5rem;
 }
+
 .form-group {
     padding: 1rem;
     margin-bottom: 0;
@@ -189,13 +186,11 @@ label, #submit {
     color: #ffffff;
     background-color: #0C375A;
     border: none;
-    border-radius: 1.5rem;
     padding: .5rem;
 }
 #submit:hover {
     background-color: #1F89E0;
 }
-
 /*-------------------------Footer----------------------- */
 .footer-section {
     color: #ffffff;
@@ -238,14 +233,14 @@ label, #submit {
 }
 
 .footer-copyright {
-    font-size: 80%;
+    font-size: .8rem;
     font-weight: 100;
     padding-top: 2rem;
     text-align: center;
 }
 
 .footer-terms {
-    font-size: 80%;
+    font-size: .8rem;
     font-weight: 600;
     padding-top: 2rem;
     text-align: center;
@@ -298,6 +293,9 @@ label, #submit {
     }
     .form-prompt {
         display: none;
+    }
+    .form-group {
+        padding: 2rem 4rem 1rem 4rem;
     }
 }
 
