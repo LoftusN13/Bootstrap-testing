@@ -154,10 +154,11 @@ h5 {
 .about-section {
     text-align: center;
     margin: 0;
+    padding: 2rem 2rem .5rem 2rem;
 }
 
-.mission-section, .station-section { 
-    padding: 2rem 2rem .5rem 2rem;
+.station-section {
+    padding-top: 2rem;
 }
 
 .promise-section {
@@ -175,7 +176,7 @@ h5 {
 }
 
 .station-image, .mission-image {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem;
 }
 
 /*--------------------Our Products Page----------------- */ 
@@ -345,7 +346,7 @@ label, #submit {
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: #ffffff;
     }
-    .home-image, .station-image, .mission-image {
+    .about-section {
         padding-bottom: 1rem;
     }
     .station-image {
