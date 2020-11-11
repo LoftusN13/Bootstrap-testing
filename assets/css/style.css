@@ -26,21 +26,6 @@ h5 {
     color: #1F89E0;
 }
 
-.hero-container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    align-content: center;
-    position: relative;
-}
-
-.hero-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; 
-}
-
-
 /*-------------------------Header----------------------- */ 
 #logo {
     height: 3rem;
