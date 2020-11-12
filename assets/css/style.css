@@ -104,7 +104,7 @@ h6 {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +211,7 @@ h6 {
 /*--------------------Our Products Page----------------- */ 
 .products-section {
     text-align: center;
-    padding: 3rem 2rem .5rem 2rem;
+    padding: 3rem 2rem 1rem 2rem;
 }
 
 .options-section1 {
