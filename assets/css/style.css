@@ -4,12 +4,22 @@
 /*-------------------------General----------------------- */
 body {
     font-family: "Raleway", sans-serif;
-    color: #161412;
-    padding-top: 3.125rem;
+    color: #161412;  
 }
 
 .container-fluid {
     padding: 0;
+}
+
+/*-----------------------Headings----------------------- */ 
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    letter-spacing: .3rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem 0 2rem;
 }
 
 h2 {
@@ -26,6 +36,14 @@ h5 {
     color: #1F89E0;
 }
 
+h6 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    display: none; 
+}
+
 /*-------------------------Header----------------------- */ 
 #logo {
     height: 3rem;
@@ -36,7 +54,7 @@ h5 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
     border-bottom: .15rem #0C375A solid;
 }
 
@@ -56,7 +74,6 @@ h5 {
 .navbar-light .navbar-nav .nav-link {
     color: #1F89E0;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
     color: #0C375A;
     background-color: rgba(0,0,0,0.1);
@@ -93,14 +110,39 @@ h5 {
     justify-content: center;
 }
 
-#overlay h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: .75rem;
-    letter-spacing: .3rem;
-    text-align: center;
-    color: #ffffff;
+/*-------------------------Hero Images------------------ */ 
+#hero-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
 
+.hero-about {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/hero1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.hero-products {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-contact {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/hero3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
 
 /*-------------------------Home Page-------------------- */ 
@@ -120,7 +162,7 @@ h5 {
 
 .intro-section {
     text-align: center;
-    padding: 2rem 2rem .5rem 2rem;
+    padding: 3rem 2rem .5rem 2rem;
 }
 .intro-section a {
     color: #1F89E0;
@@ -135,15 +177,6 @@ h5 {
 }
 
 /*-------------------------About Page------------------- */ 
-.hero-about {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
 .about-section {
     text-align: center;
     margin: 0;
@@ -176,36 +209,6 @@ h5 {
 }
 
 /*--------------------Our Products Page----------------- */ 
-#hero-container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.hero-products {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-}
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.hero-text h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    letter-spacing: .3rem;
-    color: #ffffff;
-} 
 .products-section {
     text-align: center;
     padding: 3rem 2rem .5rem 2rem;
@@ -233,15 +236,6 @@ h5 {
 }
 
 /*----------------------Contact Page-------------------- */ 
-.hero-contact {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
-}
 .contact-section {
     text-align: center;
     padding: 3rem 1.5rem;
@@ -281,6 +275,7 @@ label, #submit {
 #submit:hover {
     background-color: #1F89E0;
 }
+
 /*-------------------------Footer----------------------- */
 .footer-section {
     color: #ffffff;
@@ -288,24 +283,13 @@ label, #submit {
     text-align: center;
     padding: 1.5rem 1rem 1rem 1rem;
 }
-
-.footer-section h6 {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    display: none; 
-}
-
 .footer-section a {
     color: #ffffff;
 }
-
 .footer-section a:hover {
     color: #161412;
     text-decoration: none;
 }
-
 .footer-section a i {
     font-size: 2rem;
     padding: 1rem 1.5rem;
@@ -338,8 +322,8 @@ label, #submit {
 
 /*-------------------------Media Queries-------------------- */ 
 @media only screen and (min-width: 360px) {
-    #overlay h1 {
-        font-size: 1.25rem;
+    h1 {
+        font-size: 1.5rem;
     }
     #logo {
         height: 4rem;   
@@ -350,7 +334,7 @@ label, #submit {
 }
 
 @media only screen and (min-width: 576px) {
-    #overlay h1 {
+    h1 {
         font-size: 2rem;
     }
     .contact-info {
@@ -381,8 +365,11 @@ label, #submit {
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: #ffffff;
     }
-    .station-image {
-        padding-top: 1.5rem;
+    h1 {
+        font-size: 2.4rem;
+    }
+    .home-image, .station-image, .mission-image {
+        padding: 2rem 1.5rem;
     }
     .form-prompt {
         display: none;
